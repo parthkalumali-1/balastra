@@ -1,0 +1,128 @@
+body{
+margin:0;
+font-family:'Inter',sans-serif;
+background:#050509;
+color:white;
+}
+
+/* HERO SECTION */
+
+.hero{
+position:relative;
+height:100vh;
+display:flex;
+align-items:center;
+justify-content:center;
+text-align:center;
+background:radial-gradient(circle at center,#1c1438,#050509);
+overflow:hidden;
+}
+
+/* PARTICLES BACKGROUND */
+
+#particles-hero{
+position:absolute;
+width:100%;
+height:100%;
+top:0;
+left:0;
+z-index:0;
+}
+
+/* HERO CONTENT */
+
+.hero-content{
+position:relative;
+z-index:2;
+max-width:800px;
+padding:20px;
+}
+
+.hero h1{
+font-size:64px;
+font-weight:700;
+margin-top:20px;
+line-height:1.2;
+}
+
+.gradient{
+background:linear-gradient(90deg,#7a8cff,#ff6fd8);
+-webkit-background-clip:text;
+-webkit-text-fill-color:transparent;
+}
+
+.hero-text{
+margin-top:15px;
+color:#bdbddb;
+font-size:18px;
+}
+
+/* BADGE */
+
+.badge{
+display:inline-flex;
+align-items:center;
+gap:10px;
+padding:10px 18px;
+border-radius:30px;
+background:rgba(30,30,40,.6);
+border:1px solid rgba(255,255,255,.1);
+color:#b9c0ff;
+font-size:14px;
+}
+
+/* PULSE DOT */
+
+.dot{
+width:10px;
+height:10px;
+background:#6c7cff;
+border-radius:50%;
+animation:pulse 2s infinite;
+}
+
+@keyframes pulse{
+0%{box-shadow:0 0 0 0 rgba(108,124,255,.8);}
+70%{box-shadow:0 0 0 10px rgba(108,124,255,0);}
+100%{box-shadow:0 0 0 0 rgba(108,124,255,0);}
+}
+
+/* BUTTONS */
+
+.buttons{
+margin-top:30px;
+display:flex;
+gap:15px;
+justify-content:center;
+}
+
+.primary{
+background:linear-gradient(90deg,#6b7cff,#b44cff);
+padding:12px 24px;
+border:none;
+border-radius:25px;
+color:white;
+cursor:pointer;
+font-size:15px;
+}
+
+.secondary{
+background:#111;
+border:1px solid rgba(255,255,255,.1);
+padding:12px 24px;
+border-radius:25px;
+color:white;
+cursor:pointer;
+font-size:15px;
+}
+
+.primary:hover,
+.secondary:hover{
+transform:translateY(-2px);
+}
+
+.ios{
+margin-top:12px;
+color:#aaa;
+font-size:14px;
+}
